@@ -1,0 +1,15 @@
+/node_modules
+/.next
+/out
+/build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+.vercel
+next-env.d.ts.bak
+*.tsbuildinfo
+
+# Local-only: forces PowerShell as npm script-shell because the folder
+# name contains "&". Not valid on Linux/Vercel, so keep it out of the repo.
+.npmrc
