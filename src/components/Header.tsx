@@ -57,10 +57,17 @@ export function Header() {
             priority
             className="h-11 w-11 object-contain"
           />
-          <span
-            className={`hidden sm:inline ${onDark ? "text-paper" : "text-ink"}`}
-          >
-            Victorious Aluminium
+          <span className="hidden items-baseline gap-1.5 sm:flex">
+            <span
+              className={`font-display text-lg font-bold tracking-normal ${
+                onDark ? "text-paper" : "text-ink"
+              }`}
+            >
+              Victorious
+            </span>
+            <span className="font-display text-lg font-bold tracking-normal text-brand">
+              Aluminium
+            </span>
           </span>
         </Link>
 
@@ -127,8 +134,9 @@ export function Header() {
                   height={56}
                   className="h-10 w-10 object-contain"
                 />
-                <span className="font-display text-lg font-semibold">
-                  Victorious Aluminium
+                <span className="font-display text-lg font-bold tracking-normal">
+                  <span>Victorious</span>{" "}
+                  <span className="text-brand">Aluminium</span>
                 </span>
               </span>
               <button

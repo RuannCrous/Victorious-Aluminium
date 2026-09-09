@@ -23,8 +23,9 @@ export function Footer() {
                 height={72}
                 className="h-14 w-14 object-contain"
               />
-              <span className="font-display text-2xl font-semibold tracking-tightest">
-                Victorious Aluminium
+              <span className="font-display text-2xl font-bold tracking-normal">
+                <span>Victorious</span>{" "}
+                <span className="text-brand">Aluminium</span>
               </span>
             </div>
             <p className="mt-5 max-w-sm font-sans text-sm leading-relaxed text-paper/65">
