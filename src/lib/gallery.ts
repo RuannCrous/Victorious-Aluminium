@@ -46,8 +46,20 @@ export const gallery: MediaItem[] = [
 ];
 
 export const homeGallery: MediaItem[] = [
-  { src: "/gallery/victorious/victorious-010.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-011.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-012.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-013.jpeg", type: "image" },
+  {
+    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(1).jpeg",
+    type: "image",
+  },
+  {
+    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(2).jpeg",
+    type: "image",
+  },
+  {
+    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(3).jpeg",
+    type: "image",
+  },
+  {
+    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(4).jpeg",
+    type: "image",
+  },
 ];
