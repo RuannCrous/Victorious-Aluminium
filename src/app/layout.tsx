@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     "Victorious Aluminium",
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: "/images/brand/favicon.ico",
   },
   alternates: {
     canonical: "/",

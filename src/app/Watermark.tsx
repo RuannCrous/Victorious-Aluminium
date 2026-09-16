@@ -8,7 +8,7 @@ export default function Watermark() {
     >
       <div className="-rotate-45 flex flex-col items-center gap-4 opacity-70 select-none">
         <Image
-          src="/nexsite-logo.png"
+          src="/images/brand/nexsite-logo.png"
           alt=""
           width={900}
           height={900}

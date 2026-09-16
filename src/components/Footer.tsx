@@ -17,7 +17,7 @@ export function Footer() {
           <div className="md:col-span-5">
             <div className="flex items-center gap-3">
               <Image
-                src="/new logo.png"
+                src="/images/brand/victorious-logo.png"
                 alt={site.name}
                 width={72}
                 height={72}

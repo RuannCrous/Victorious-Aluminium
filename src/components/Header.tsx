@@ -50,7 +50,7 @@ export function Header() {
           aria-label={`${site.name} — ${t.nav.home}`}
         >
           <Image
-            src="/new logo.png"
+            src="/images/brand/victorious-logo.png"
             alt=""
             width={64}
             height={64}
@@ -128,7 +128,7 @@ export function Header() {
             <div className="shell flex h-20 items-center justify-between">
               <span className="flex items-center gap-2.5">
                 <Image
-                  src="/new logo.png"
+                  src="/images/brand/victorious-logo.png"
                   alt=""
                   width={56}
                   height={56}

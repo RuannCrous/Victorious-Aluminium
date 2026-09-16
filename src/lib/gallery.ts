@@ -1,65 +1,17 @@
 export type MediaType = "image" | "video";
 export type MediaItem = { src: string; type: MediaType };
 
-export const gallery: MediaItem[] = [
-  { src: "/gallery/victorious/victorious-001.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-002.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-003.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-004.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-005.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-006.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-007.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-008.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-009.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-010.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-011.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-012.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-013.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-014.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-015.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-016.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-017.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-018.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-019.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-020.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-021.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-022.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-023.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-024.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-025.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-026.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-027.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-028.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-029.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-030.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-031.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-032.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-033.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-034.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-035.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-036.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-037.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-038.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-039.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-040.jpeg", type: "image" },
-  { src: "/gallery/victorious/victorious-041.jpeg", type: "image" },
-];
+const projectImage = (index: number) =>
+  `/images/gallery/projects/project-${String(index).padStart(2, "0")}.jpeg`;
+
+export const gallery: MediaItem[] = Array.from({ length: 41 }, (_, i) => ({
+  src: projectImage(i + 1),
+  type: "image",
+}));
 
 export const homeGallery: MediaItem[] = [
-  {
-    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(1).jpeg",
-    type: "image",
-  },
-  {
-    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(2).jpeg",
-    type: "image",
-  },
-  {
-    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(3).jpeg",
-    type: "image",
-  },
-  {
-    src: "/gallery/new%20images%20Victorious%20Aluminium/Our%20Work%20(4).jpeg",
-    type: "image",
-  },
+  { src: "/images/gallery/home/our-work-01.jpeg", type: "image" },
+  { src: "/images/gallery/home/our-work-02.jpeg", type: "image" },
+  { src: "/images/gallery/home/our-work-03.jpeg", type: "image" },
+  { src: "/images/gallery/home/our-work-04.jpeg", type: "image" },
 ];

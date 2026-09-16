@@ -26,7 +26,9 @@ async function loadGoogleFont(text: string, weight: 600 | 700) {
 }
 
 export default async function OpengraphImage() {
-  const logo = readFileSync(join(process.cwd(), "public", "new logo.png"));
+  const logo = readFileSync(
+    join(process.cwd(), "public", "images", "brand", "victorious-logo.png"),
+  );
   const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
   const fontText = `${site.name} ${site.tagline}`;
   const [font600, font700] = await Promise.all([
